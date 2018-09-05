@@ -1,0 +1,2 @@
+mypack
+-DCATKIN_DEVEL_PREFIX=/home/sepideh/Desktop/rosproject/devel -DCMAKE_INSTALL_PREFIX=/home/sepideh/Desktop/rosproject/install -G Unix Makefiles
