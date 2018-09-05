@@ -11,6 +11,8 @@ ros/ros.h
 /home/sepideh/Desktop/rosproject/src/mypack/src/ros/ros.h
 std_msgs/String.h
 /home/sepideh/Desktop/rosproject/src/mypack/src/std_msgs/String.h
+turtlesim/Pose.h
+/home/sepideh/Desktop/rosproject/src/mypack/src/turtlesim/Pose.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -659,6 +661,22 @@ ros/forwards.h
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
 
 /opt/ros/kinetic/include/std_msgs/String.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/kinetic/include/turtlesim/Pose.h
 string
 -
 vector
