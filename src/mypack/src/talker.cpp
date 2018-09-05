@@ -64,7 +64,7 @@ int main(int argc, char **argv)
    // std::stringstream ss;
     //ss << "hello world " << count;
     msg.linear.x=2;
-    msg.angular.x=2;
+    msg.angular.y=2;
     
     //ROS_INFO("%s", msg.data.c_str());
 
