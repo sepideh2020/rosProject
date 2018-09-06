@@ -66,18 +66,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -132,6 +120,18 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -346,21 +346,6 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
-mypack/CMakeFiles/talker.dir/rule:
-	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f CMakeFiles/Makefile2 mypack/CMakeFiles/talker.dir/rule
-.PHONY : mypack/CMakeFiles/talker.dir/rule
-
-# Convenience name for target.
-talker: mypack/CMakeFiles/talker.dir/rule
-
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f mypack/CMakeFiles/talker.dir/build.make mypack/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
-
-# Convenience name for target.
 mypack/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f CMakeFiles/Makefile2 mypack/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : mypack/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -447,33 +432,6 @@ src/listener.cpp.s:
 	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f mypack/CMakeFiles/listener.dir/build.make mypack/CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
-src/talker.o: src/talker.cpp.o
-
-.PHONY : src/talker.o
-
-# target to build an object file
-src/talker.cpp.o:
-	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f mypack/CMakeFiles/talker.dir/build.make mypack/CMakeFiles/talker.dir/src/talker.cpp.o
-.PHONY : src/talker.cpp.o
-
-src/talker.i: src/talker.cpp.i
-
-.PHONY : src/talker.i
-
-# target to preprocess a source file
-src/talker.cpp.i:
-	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f mypack/CMakeFiles/talker.dir/build.make mypack/CMakeFiles/talker.dir/src/talker.cpp.i
-.PHONY : src/talker.cpp.i
-
-src/talker.s: src/talker.cpp.s
-
-.PHONY : src/talker.s
-
-# target to generate assembly for a file
-src/talker.cpp.s:
-	cd /home/sepideh/Desktop/rosproject/build && $(MAKE) -f mypack/CMakeFiles/talker.dir/build.make mypack/CMakeFiles/talker.dir/src/talker.cpp.s
-.PHONY : src/talker.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -481,7 +439,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
@@ -496,7 +453,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... talker"
 	@echo "... test"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
@@ -504,12 +460,10 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
-	@echo "... src/talker.o"
-	@echo "... src/talker.i"
-	@echo "... src/talker.s"
 .PHONY : help
 
 
