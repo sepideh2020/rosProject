@@ -45,7 +45,7 @@ int main(int argc, char **argv)
    * than we can send them, the number here specifies how many messages to
    * buffer up before throwing some away.
    */
-  ros::Publisher chatter_pub = n.advertise<geometry_msgs::Twist>(" turtle1/cmd_vel", 1000);
+  ros::Publisher chatter_pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel", 1000);
 
   ros::Rate loop_rate(10);
 
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
    * A count of how many messages we have sent. This is used to create
    * a unique string for each message.
    */
- int count = 0;
+  int count = 0;
   while (ros::ok())
   {
     /**
@@ -61,12 +61,11 @@ int main(int argc, char **argv)
      */
     geometry_msgs::Twist msg;
 
-   // std::stringstream ss;
+    //std::stringstream ss;
     //ss << "hello world " << count;
     msg.linear.x=2;
-    msg.angular.y=2;
-    
-    //ROS_INFO("%s", msg.data.c_str());
+     msg.angular.y=2;
+//    ROS_INFO("%s", msg.data.c_str());
 
     /**
      * The publish() function is how you send messages. The parameter
