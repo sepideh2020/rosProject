@@ -1,0 +1,8 @@
+prefix=/home/sepideh/Desktop/rosproject/src/cmake-build-debug/devel
+
+Name: mypack
+Description: Description of mypack
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sepideh/Desktop/rosproject/src/cmake-build-debug/devel/lib 
+Requires: 

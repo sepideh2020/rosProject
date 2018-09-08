@@ -7,15 +7,17 @@
 
 
 turtlesim::Pose::ConstPtr message;
+float x;
+float y;
 
 
 void chatterCallback(const turtlesim::Pose::ConstPtr& msg)
 {
   ROS_INFO("I heard: [%f],[%f],[%f],[%f],[%f] \n", msg->x, msg->y, msg->theta, msg->linear_velocity, msg->angular_velocity);
 
-  message->x=msg->x;
-  message->y=msg->y;
-
+  x=msg->x;
+  y=msg->y;
+  
 }
 
 int main(int argc, char **argv)
@@ -38,8 +40,8 @@ int main(int argc, char **argv)
   while (ros::ok())
   {
     geometry_msgs::Twist msg;
-    msg.linear.x=message->x;
-    msg.angular.y=message->y;
+    msg.linear.x=x;
+    msg.linear.y=y;
     chatter_pub.publish(msg);
     ros::spinOnce();
     loop_rate.sleep();
