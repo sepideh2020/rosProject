@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="catkin">
+          <df name="catkin_generated">
+            <df name="version">
+            </df>
+          </df>
+        </df>
+        <df name="catkin_generated">
+          <df name="installspace">
+          </df>
+          <df name="stamps">
+            <df name="Project">
+            </df>
+          </df>
+        </df>
+        <df name="CMakeFiles">
+          <df name="3.5.1">
+            <df name="CompilerIdC">
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="clean_test_results.dir">
+          </df>
+          <df name="CMakeTmp">
+          </df>
+          <df name="download_extra_data.dir">
+          </df>
+          <df name="doxygen.dir">
+          </df>
+          <df name="run_tests.dir">
+          </df>
+          <df name="tests.dir">
+          </df>
+          <in>feature_tests.c</in>
+          <in>feature_tests.cxx</in>
+        </df>
+        <df name="gtest">
+          <df name="CMakeFiles">
+            <df name="gmock.dir">
+              <df name="src">
+              </df>
+              <df name="usr">
+                <df name="src">
+                  <df name="gtest">
+                    <df name="src">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="gmock_main.dir">
+              <df name="src">
+              </df>
+              <df name="usr">
+                <df name="src">
+                  <df name="gtest">
+                    <df name="src">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="gtest">
+            <df name="CMakeFiles">
+              <df name="gtest.dir">
+                <df name="src">
+                </df>
+              </df>
+              <df name="gtest_main.dir">
+                <df name="src">
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="mypack">
+          <df name="catkin_generated">
+            <df name="installspace">
+            </df>
+            <df name="stamps">
+              <df name="mypack">
+              </df>
+            </df>
+          </df>
+          <df name="CMakeFiles">
+            <df name="listener.dir">
+              <df name="src">
+              </df>
+            </df>
+            <df name="roscpp_generate_messages_cpp.dir">
+            </df>
+            <df name="roscpp_generate_messages_eus.dir">
+            </df>
+            <df name="roscpp_generate_messages_lisp.dir">
+            </df>
+            <df name="roscpp_generate_messages_nodejs.dir">
+            </df>
+            <df name="roscpp_generate_messages_py.dir">
+            </df>
+            <df name="rosgraph_msgs_generate_messages_cpp.dir">
+            </df>
+            <df name="rosgraph_msgs_generate_messages_eus.dir">
+            </df>
+            <df name="rosgraph_msgs_generate_messages_lisp.dir">
+            </df>
+            <df name="rosgraph_msgs_generate_messages_nodejs.dir">
+            </df>
+            <df name="rosgraph_msgs_generate_messages_py.dir">
+            </df>
+            <df name="std_msgs_generate_messages_cpp.dir">
+            </df>
+            <df name="std_msgs_generate_messages_eus.dir">
+            </df>
+            <df name="std_msgs_generate_messages_lisp.dir">
+            </df>
+            <df name="std_msgs_generate_messages_nodejs.dir">
+            </df>
+            <df name="std_msgs_generate_messages_py.dir">
+            </df>
+            <df name="talker.dir">
+              <df name="src">
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="test_results">
+        </df>
+      </df>
+      <df name="devel">
+        <df name="lib">
+          <df name="mypack">
+          </df>
+          <df name="pkgconfig">
+          </df>
+        </df>
+        <df name="share">
+          <df name="mypack">
+            <df name="cmake">
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="src">
+        <df name=".idea">
+          <df name="codeStyles">
+          </df>
+        </df>
+        <df name="mypack">
+          <df name=".idea">
+          </df>
+          <df name="include">
+            <df name="mypack">
+            </df>
+          </df>
+          <df name="src">
+            <in>listener.cpp</in>
+          </df>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
