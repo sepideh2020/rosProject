@@ -60,7 +60,7 @@ int main(int argc, char **argv)
 //  ros::spin();
 
 
-  ros::init(argc, argv, "talker");
+  //ros::init(argc, argv, "talker");
 
   ros::Publisher chatter_pub = n.advertise<geometry_msgs::Twist>("turtle2/cmd_vel", 1000);
   ros::Rate loop_rate(10);
